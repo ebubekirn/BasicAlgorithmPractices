@@ -177,6 +177,8 @@ Console.ReadKey();
 
 #endregion
 
+#region Asal Sayı
+
 class Program
 {
     public static bool asalmi(int sayi)
@@ -187,7 +189,7 @@ class Program
 
         for (int i = 2; i < sayi; i++)
         {
-            if (sayi % i == 0) //www.yazilimkodlama.com
+            if (sayi % i == 0) 
             {
                 kontrol = 1;
                 break;
@@ -198,7 +200,7 @@ class Program
             durum = false;
         }
         else
-        {//www.yazilimkodlama.com
+        {
             durum = true;
         }
 
@@ -239,3 +241,5 @@ class Program
         Console.ReadKey();
     }
 }
+
+#endregion
