@@ -178,7 +178,7 @@ Console.ReadKey();
 #endregion
 
 #region Asal Sayı
-
+/*
 class Program
 {
     public static bool asalmi(int sayi)
@@ -241,5 +241,17 @@ class Program
         Console.ReadKey();
     }
 }
+
+*/
+
+#endregion
+
+#region Metnin Kaç Harften Oluştuğunu Bul
+
+string cumle;
+Console.Write("Cumleyi Girin : ");
+cumle = Console.ReadLine();
+string[] kelimeler = cumle.Split(' ');
+Console.WriteLine(kelimeler.Length);
 
 #endregion
