@@ -246,12 +246,23 @@ class Program
 
 #endregion
 
-#region Metnin Kaç Harften Oluştuğunu Bul
-
+#region Metnin Kaç Kelimeden Oluştuğunu Bul
+/*
 string cumle;
 Console.Write("Cumleyi Girin : ");
 cumle = Console.ReadLine();
 string[] kelimeler = cumle.Split(' ');
 Console.WriteLine(kelimeler.Length);
-
+*/
 #endregion
+
+#region Derece Fahrenayt Çevrimi
+
+double derece, fah;
+Console.Write("Derece cinsinden sıcaklık değerini girin:");
+derece = Convert.ToDouble(Console.ReadLine());
+fah = derece * 1.8 + 32;
+Console.WriteLine($"Girdiğiniz derece ={derece} , Fahrenait değeri = {fah}");
+Console.ReadKey();
+
+#endregion 
