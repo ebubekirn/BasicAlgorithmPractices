@@ -257,12 +257,43 @@ Console.WriteLine(kelimeler.Length);
 #endregion
 
 #region Derece Fahrenayt Çevrimi
-
+/*
 double derece, fah;
 Console.Write("Derece cinsinden sıcaklık değerini girin:");
 derece = Convert.ToDouble(Console.ReadLine());
 fah = derece * 1.8 + 32;
 Console.WriteLine($"Girdiğiniz derece ={derece} , Fahrenait değeri = {fah}");
 Console.ReadKey();
+*/
+#endregion
 
-#endregion 
+#region İngilizce Metindeki Tr Ifadeleri Eng Cevirme
+
+string kelime, yenikelime;
+Console.WriteLine("Türkçe kelime giriniz:");
+kelime = Console.ReadLine();
+
+yenikelime = kelime;
+
+yenikelime = yenikelime.Replace('İ', 'I');
+yenikelime = yenikelime.Replace('ı', 'i');
+yenikelime = yenikelime.Replace('Ç', 'C');
+yenikelime = yenikelime.Replace('ç', 'c');
+yenikelime = yenikelime.Replace('Ş', 'S');
+yenikelime = yenikelime.Replace('ş', 's');
+yenikelime = yenikelime.Replace('Ğ', 'G');
+yenikelime = yenikelime.Replace('ğ', 'g');
+yenikelime = yenikelime.Replace('Ü', 'U');
+yenikelime = yenikelime.Replace('ü', 'u');
+yenikelime = yenikelime.Replace('Ö', 'O');
+yenikelime = yenikelime.Replace('ö', 'o');
+
+if (kelime != yenikelime)
+{
+    Console.WriteLine("Türkçe karakterler üzerinde değiştirmeler yapılmıştır.");
+    Console.Write("Girilen Kelime: {0} Düzeltilen Kelime: {1}", kelime, yenikelime);
+
+}
+Console.ReadKey();
+
+#endregion
