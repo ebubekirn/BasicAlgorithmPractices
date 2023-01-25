@@ -268,7 +268,7 @@ Console.ReadKey();
 #endregion
 
 #region İngilizce Metindeki Tr Ifadeleri Eng Cevirme
-
+/*
 string kelime, yenikelime;
 Console.WriteLine("Türkçe kelime giriniz:");
 kelime = Console.ReadLine();
@@ -295,5 +295,31 @@ if (kelime != yenikelime)
 
 }
 Console.ReadKey();
+*/
+#endregion
+
+#region Klavyeden Girilen Sayıya Göre Ekrana Piramit Halinde Sayıları Yazdırma
+
+Console.Write("Bir sayı giriniz: ");
+int sayi = Convert.ToInt32(Console.ReadLine());
+
+
+for (int i = 1; i <= sayi; i++)
+{
+
+	int sayi2 = i;
+	for (int j = 0; j < i; j++)
+	{
+		Console.Write(sayi2);
+		sayi2++;
+	}
+	sayi2 = sayi2 - 1;
+	for (int z = 1; z < i; z++)
+	{
+		sayi2--;
+		Console.Write(sayi2);
+	}
+	Console.WriteLine();
+}
 
 #endregion
